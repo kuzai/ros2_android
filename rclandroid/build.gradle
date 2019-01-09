@@ -2,24 +2,22 @@ apply plugin: 'com.android.library'
 apply plugin: 'org.ros2.tools.gradle'
 
 android {
-  compileSdkVersion 25
+  compileSdkVersion 21
   buildToolsVersion "25.0.2"
   defaultConfig {
     minSdkVersion 21
-    targetSdkVersion 25
+    targetSdkVersion 21
   }
   compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
-    }
+  }
 }
 
 buildscript {
   repositories {
     jcenter()
     google()
-    mavenCentral()
-    mavenLocal()
     maven {
       url "https://plugins.gradle.org/m2/"
     }
@@ -34,5 +32,4 @@ buildscript {
 repositories {
    jcenter()
    google()
-   mavenCentral()
 }
