@@ -26,12 +26,13 @@ buildscript {
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:2.3.3'
+    classpath 'com.android.tools.build:gradle:3.2.1'
     classpath 'gradle.plugin.org.ros2.tools.gradle:ament:0.7.0'
   }
 }
 
 repositories {
-  jcenter()
+   jcenter()
+   google()
    mavenCentral()
 }
